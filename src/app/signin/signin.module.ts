@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { ReactiveFormsModule } from '@angular/forms';
 
 import {
   AvatarModule,
@@ -12,7 +13,8 @@ import {
   InputModule,
   CheckboxModule,
   ButtonModule,
-  AlertModule
+  AlertModule,
+  IconModule,
 } from '@xdsystems/coop-library-angular';
 
 import { SignInRoutingModule } from './signin-routing.module';
@@ -33,7 +35,9 @@ import { SignInComponent } from './signin.component';
     InputModule,
     CheckboxModule,
     ButtonModule,
-    AlertModule
+    AlertModule,
+    ReactiveFormsModule,
+    IconModule,
   ],
 })
 export class SignInModule {}
