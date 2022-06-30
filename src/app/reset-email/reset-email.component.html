@@ -1,0 +1,57 @@
+<div>
+  <main>
+    <div class="custom-row mb-2 mt-2">
+      <div class="col-md-1"></div>
+      <div class="col-md-6">
+        <h1 class="h1">Recover your email</h1>
+      </div>
+      <div class="col-md-5 right-title"></div>
+    </div>
+
+    <div class="custom-row mb-2 mt-2">
+      <div class="col-md-1"></div>
+      <div class="col-md-6">
+        <xds-card>
+          <xds-alert type="success" styleType="primary" [closable]="false">
+            Success! Enter your password to sign in.
+          </xds-alert>
+          <div class="d-flex flex-column my-2">
+            <xds-input label="Policy number" sizeWidth="large"></xds-input>
+
+            <xds-input
+              label="First name of the policy holder"
+              sizeWidth="large"
+              class="my-1"
+            ></xds-input>
+
+            <xds-input
+              label="Last name of the policy holder"
+              sizeWidth="large"
+            ></xds-input>
+          </div>
+          <div class="text-right mt-2">
+            <xds-button type="primary"> Recover email </xds-button>
+          </div>
+        </xds-card>
+        <p class="mt-2">
+          <xds-link link="/sign-in"> Back </xds-link>
+        </p>
+      </div>
+
+      <div class="col-md-5 mb-1-half pl-2">
+        <div class="d-flex my-2">
+          <xds-icon
+            icon="information"
+            label="information"
+            size="2x"
+            class="mr-1"
+          ></xds-icon>
+          <h6 class="mb-0">
+            Your policy/account number and amount due are found
+          </h6>
+        </div>
+        <span>On your billing documents</span>
+      </div>
+    </div>
+  </main>
+</div>

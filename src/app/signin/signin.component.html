@@ -1,0 +1,74 @@
+<div>
+  <main>
+    
+    <div class="custom-row mb-2 mt-2">
+      <div class="col-md-1"></div>
+      <div class="col-md-6 ">
+        <h1 class="h1">
+          Sign in to your account
+        </h1>
+      </div>
+      <div class="col-md-5 right-title">
+          <h6 [innerText]="text" class="mb-0">
+          </h6>
+          <img src="../../assets/image/2.png" class="ml-3" />
+      </div>
+    </div>
+    <div class="container">
+      <xds-alert 
+        type="warning"
+        styleType="primary"	
+        [closable]="false"	
+      >
+        If you're a clien who has been impacted by extreme weather events, please note our Claims Centers are currently experiencing extremely high call volumes resulting in longer than normal wait times. We are committed to supporting you as quickly as possible and appreciate your patience. You can submit your claim through Online Services, or call 1-877-682-5246. In Quebec, call 1-877-594-2667.
+      </xds-alert>
+    </div>
+    <div class="custom-row mb-2 mt-2">
+      <div class="col-md-1"></div>
+      <div class="col-md-6 pr-md-0">
+          <xds-card >
+            <div class="d-flex flex-column mb-2">
+              <xds-input 
+                label="Email"	
+                cueText="Use the email you registered with."		
+                sizeWidth="large"		
+              ></xds-input>
+              
+              <xds-link link="/reset-email" class="py-1">
+                Forgot your email?
+              </xds-link>
+            </div>
+            <div class="d-flex flex-column ">
+              <xds-input 
+                label="Password"	
+                sizeWidth="large"		
+              ></xds-input>
+              <xds-link link="/reset-password" class="py-1">
+                Forgot your password?
+              </xds-link>
+            </div>
+            <xds-checkbox 
+              id="checkbox"
+              class="mt-2"
+            >Remember me</xds-checkbox>
+            <div class="text-right mt-2">
+              <xds-button 
+                type="primary"						
+              >
+                Sign in
+              </xds-button>
+            </div>
+          </xds-card>
+        <p class="mt-2">
+          <span class="pr-1">Don't you have an account?</span>
+          <xds-link link="/#">
+            Register today
+          </xds-link>
+        </p>
+      </div>
+
+      <div class="col-md-5 px-0 mb-1-half right-image">
+      </div> 
+    </div>
+  </main>
+</div>

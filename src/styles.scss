@@ -1,0 +1,74 @@
+@import '@xdsystems/coop-library-css/dist/style.min.css';
+
+app-root,
+body {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+}
+
+footer {
+	margin-top: auto;
+}
+
+
+.font-12 {
+    font-size: 12px;
+}
+
+.font-14 {
+    font-size: 14px;
+}
+
+.right-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.right-title h6 {
+    text-align: right;
+}
+
+.right-image {
+    background-image: url("./assets/image/11.png");
+    background-repeat: no-repeat;
+    background-position-y: center;
+}
+
+.custom-row {
+    display: flex;
+    flex-wrap: wrap;
+}
+@media only screen and (max-width: 768px) {
+    .right-title {
+        display: flex;
+        align-items: flex-start !important;
+        justify-content: flex-start !important;
+    } 
+    .right-title h6 {
+        text-align: left !important;
+    }
+    .right-image {
+        height: 334px;
+        margin-top: 20px;
+        background-size: cover;
+        background-position-y: unset !important;
+    }     
+}
+
+@media only screen and (min-width: 1200px) {
+    .right-image {
+    background-size: contain;
+    }
+ }
+
+.custom-container-fluid {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-left: 7.5em;
+    margin-right: 11.5em;
+}
