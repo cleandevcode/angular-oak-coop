@@ -49,6 +49,16 @@
             >
               Double check your email and password entries.
             </xds-alert>
+            <xds-alert
+              type="danger"
+              title="Sign in Failed."
+              styleType="primary"
+              [closable]="false"
+              class="mb-1"
+              *ngIf="signInError"
+            >
+              Your username or password does not match.
+            </xds-alert>
             <div class="d-flex flex-column mb-2">
               <xds-input
                 [(ngModel)]="email"
@@ -80,7 +90,14 @@
 
             <xds-checkbox id="checkbox" class="mt-2">Remember me</xds-checkbox>
             <div class="text-right mt-2">
-              <xds-button type="submit"> Sign in </xds-button>
+              <xds-button
+                type="submit"
+                (click)="login()"
+                [loading]="loading"
+                [disabled]="loading"
+              >
+                Sign in
+              </xds-button>
             </div>
           </form>
         </xds-card>
